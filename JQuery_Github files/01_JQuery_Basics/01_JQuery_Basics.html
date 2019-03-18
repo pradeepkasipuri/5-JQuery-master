@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="01_styles.css">
+    <title>JQuery Basics</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Basics</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################START HERE#########################-->
+
+    <!-- Inline JQuery -->
+    <p class="lead" onclick="$(this).hide()">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae corporis hic neque vero. Adipisci aliquid amet atque cum cupiditate, earum enim explicabo fugiat harum ipsa iste labore magnam molestiae mollitia numquam pariatur quae, quis sequi soluta, tempora temporibus vitae?</p>
+
+    <!-- Internal JQuery -->
+    <div class="card" id="blue-card">
+        <div class="card-body bg-primary text-white">
+            <h3>Ui Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus fugiat inventore molestias sequi veniam. Alias aliquid asperiores atque consectetur corporis debitis dignissimos dolores doloribus, earum eos esse eum fuga impedit natus neque officia quae qui rerum unde veniam veritatis voluptatum?</p>
+        </div>
+    </div>
+
+    <!-- External Way -->
+    <button class="btn btn-success" id="green-btn">HIDE</button>
+    <div class="card" id="green-card">
+        <div class="card-body bg-success text-white">
+            <h3>Ui Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus fugiat inventore molestias sequi veniam. Alias aliquid asperiores atque consectetur corporis debitis dignissimos dolores doloribus, earum eos esse eum fuga impedit natus neque officia quae qui rerum unde veniam veritatis voluptatum?</p>
+        </div>
+    </div>
+
+    <!-- JQuery Example -->
+    <div class="card mt-3">
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="user">
+                </div>
+                <h2 id="h2-tag"></h2>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+<script src="../bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<script src="01_app.js"></script>
+<script>
+    $('#blue-card').click(function() {
+       $(this).hide();
+    });
+</script>
+</body>
+</html>
+

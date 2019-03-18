@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="03_styles.css">
+    <title>JQuery Events</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Events</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################START HERE#########################-->
+
+    <!-- Click Event -->
+    <h3>Click Event</h3>
+    <button class="btn btn-primary" id="blue-btn">Click Me</button>
+
+    <!-- Click Event -->
+    <h3>DBLClick Event</h3>
+    <button class="btn btn-danger" id="red-btn">Click Me</button>
+
+    <!-- Toggle Button -->
+    <h2>Toggle Button</h2>
+    <button class="btn btn-success" id="green-btn">Register</button>
+
+    <!-- Show Modal -->
+    <h3>Show Modal</h3>
+    <button class="btn btn-dark" id="dark-btn">Hover Me</button>
+
+    <div class="modal" id="light-modal">
+        <div class="modal-dialog">
+            <div class="modal-content bg-light">
+                <div class="modal-header">
+                    <h3>Please don't Go !!</h3>
+                    <button class="close" data-dismiss="modal">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, commodi culpa, cumque dicta dolorem dolores earum esse, explicabo id labore laborum maxime modi non omnis porro quam repellendus similique unde vitae voluptas. Ad beatae, culpa dicta ea eligendi esse facilis fugit id in molestiae nam neque provident quasi qui quia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+<script src="../bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<script src="03_app.js"></script>
+</body>
+</html>
+
